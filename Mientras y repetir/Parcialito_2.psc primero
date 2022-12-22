@@ -1,0 +1,60 @@
+//Diseñar un programa que pida el ingreso del dia de la semana y la hora.
+//Dependiendo del dia y la semana se debera informar:
+//	Si es lunes y la hora esta dentro de 08 a 16, se debe mostrar como cuesta arrancar la semana.
+//	Si es viernes y la hora esta dentro de 08 a 16, diga ultimo deia laboral.
+//	Si es martes, miercoles, jueves y la hora esta dentro de 08 a 16, estoy cumpliendo con mi trabajo.
+//	En caso de ser de lunes a viernes y fuera del horario laboral que diga tiempo de descanso.
+//	Si es fin de semana que diga tiempo de amigos, familia y salidas.
+//	Deben utilizar según y sino.
+
+
+Algoritmo Parcialito_2
+	Definir dia Como Caracter;
+	Definir hora Como Entero;
+	Definir mensaje Como Caracter;
+	
+	Mostrar "Ingrese un dia de la semana: ";
+	Leer dia;
+	Mostrar "Ingrese la hora deseada: ";
+	Leer hora;
+	
+	Segun dia Hacer
+		"lunes":
+			Si hora > 8 Y hora < 16 Entonces
+				mensaje = "Como cuesta arrancar la semana";
+			SiNo
+				mensaje = "Tiempo de descanso";
+			FinSi
+		"martes":
+			Si hora > 8 Y hora < 16 Entonces
+				mensaje = "Estoy cumpliendo con mi trabajo";
+			SiNo
+				mensaje = "Tiempo de descanso";
+			FinSi
+		"miercoles":
+			Si hora > 8 Y hora < 16 Entonces
+				mensaje = "Estoy cumpliendo con mi trabajo";
+			SiNo
+				mensaje = "Tiempo de descanso";
+			FinSi
+		"jueves":
+			Si hora > 8 Y hora < 16 Entonces
+				mensaje = "Estoy cumpliendo con mi trabajo";
+			SiNo
+				mensaje = "Tiempo de descanso";
+			FinSi
+		"viernes":
+			Si hora > 8 Y hora < 16 Entonces
+				mensaje = "Ultimo dia laboral";
+			SiNo
+				mensaje = "Tiempo de descanso";
+			FinSi
+		"sabado":
+			mensaje = "Tiempo de amigos, familia y salidas";
+		"domingo":
+			mensaje = "Tiempo de amigos, familia y salidas";
+	FinSegun
+	
+	Mostrar mensaje;
+	
+FinAlgoritmo

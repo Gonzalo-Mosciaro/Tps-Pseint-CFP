@@ -1,0 +1,24 @@
+//Escribir un programa que calcule al perímetro y área de un círculo dado su radio (4)
+
+
+Algoritmo Ejercicios1_ES
+	Definir radio Como Real;
+	Definir perimetro Como Real;
+	Definir area Como Real;
+	Definir pii Como Real;
+	Definir diametro Como Real;
+	radio=4;
+	pii=3.1416;
+	
+	Mostrar "Ingrese el perimetro del circulo: ";
+	Leer perimetro;
+	
+	diametro=perimetro/pii; 
+	
+	perimetro=pii*diametro;
+	
+	area=pii*(radio^2);
+	
+	Mostrar "El perimetro del circulo es: ",perimetro," y el área es: ",area;
+	
+FinAlgoritmo
